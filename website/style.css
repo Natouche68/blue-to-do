@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 280px;
+	padding: 100px 20vw;
+}
+
+.header {
+	background: #008dfd;
+	color: #fff;
+	padding: 100px 10vw;
+	background-image: url('./terminal.png');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.footer {
+	background: #008dfd;
+	color: #fff;
+	padding: 60px 20vw;
+	min-height: 200px;
+	text-align: center;
+}
+
+.wave {
+	aspect-ratio: 960/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('./wave-separator.svg');
+}
+
+.highlighted {
+	padding: 10px;
+	position: relative;
+	z-index: 10;
+	font-weight: 600;
+	animation: text-highlighted 0.6s ease-out 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.highlighted::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: '';
+	background: #fff;
+	z-index: -1;
+	border-radius: 3px;
+	animation: highlighting 1s ease-out 0.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes text-highlighted {
+	from {
+		color: #fff;
+	}
+
+	to {
+		color: #008dfd;
+	}
+}
+
+@keyframes highlighting {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+h1 {
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 700;
+	font-size: 3.6em;
+	margin: 0;
+	padding: 20px 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: 400;
+}
+
+h3 {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.download-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+a.download-button {
+	text-decoration: none;
+	width: 100px;
+	background: #fff;
+	border-radius: 7px;
+	margin: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.4s ease;
+}
+
+a.download-button:hover {
+	background: #f3f3f3;
+}
+
+.os-icon {
+	width: 90px;
+	height: 90px;
+}
+
+.os-icon svg {
+	width: 90px;
+	height: 90px;
+}
+
+.os-name {
+	font-weight: 600;
+	color: #000;
+	margin: 5px;
+	text-align: center;
+}
+
+.link {
+	color: #000;
+	font-family: 'JetBrains Mono', monospace;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.presentation-text {
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+.terminal {
+	background: #000;
+	color: #fff;
+	margin: 15px;
+	padding: 20px;
+	font-family: 'JetBrains Mono', monospace;
+	border-radius: 10px;
+	font-size: 1.4em;
+}
+
+.github-logo {
+	margin: 15px;
+}
+
+.github-logo svg {
+	height: 75px;
+}
+
+.frameworks {
+	margin: 30px;
+	font-size: 1.2em;
+}
+
+.frameworks a {
+	color: #fff;
+	font-weight: 500;
+	margin: 2px;
+}
+
+.signature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+	font-size: 1.2em;
+}
+
+.signature svg {
+	height: 30px;
+	width: 30px;
+	margin: 3px;
+}
+
+.signature a {
+	margin: 5px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.instructions-image {
+	border-radius: 12px;
+	box-shadow: 5px 5px 15px #545456;
+	margin: 20px;
+	height: 420px;
+}

@@ -1,0 +1,7 @@
+scripts:
+  start: deno run --allow-read --allow-write --unstable mod.ts
+  dev: deno run --watch --allow-read --allow-write --unstable mod.ts
+  build-win: deno compile --allow-read --allow-write --unstable --target x86_64-pc-windows-msvc mod.ts
+  build-linux: deno compile --allow-read --allow-write --unstable --target x86_64-unknown-linux-gnu mod.ts
+  build-mac-x64: deno compile --allow-read --allow-write --unstable --target x86_64-apple-darwin mod.ts
+  build-mac-arm: deno compile --allow-read --allow-write --unstable --target aarch64-apple-darwin mod.ts

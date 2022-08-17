@@ -1,2 +1,3 @@
-# blue-to-do
- Note your tasks, right from your terminal.
+# Blue To-Do
+
+Note your tasks, right from your terminal.
